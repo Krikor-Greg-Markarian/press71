@@ -8,7 +8,7 @@ function Navbar() {
           <p className="inline text-2xl font-bold ">PRESS</p>
           <p className="inline text-2xl text-red-600 font-bold">71</p>
           <div className="inline ml-12 pt-1">
-            <ul className="inline-block">
+            <ul className="inline-block ">
               <li className="text-sm text-gray-400 inline font-bold ">
                 <a href="">NEWYORK</a>
               </li>
@@ -20,8 +20,11 @@ function Navbar() {
               </li>
               <li className="text-sm text-gray-400 inline ml-2 font-bold">
                 <a href="">ACCOUNT</a>
+                
               </li>
+              
             </ul>
+           
           </div>
         </div>
        
