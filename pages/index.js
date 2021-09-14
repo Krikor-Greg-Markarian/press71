@@ -19,19 +19,20 @@ export default function Home(props) {
         <Navbar2 />
       </section>
 
-      <section className = "container mx-auto pt-12">
+      <section className = "container mx-auto pt-12 ">
         <button className = "bg-red-600 text-white text-sm font-bold px-4 py-1 inline">TRADING NOW</button>
         <p className = "inline ml-5 font-bold text-sm text-gray-600">Trump sough to buy vaccine developer exclusively for US, say German officials updates</p>
       </section>
 
 
       <section>
-        <div className = "container mx-auto pt-8">
-        <div className = "grid-cols-3 ">
+        <div className = "container mx-auto pt-8 border-8">
+        <div className = "grid grid-cols-3 border-8">
           <div className = "cols-span-1">
               <div className = "coronaveg"></div>
-              
+              asd
           </div>
+          asd
         
         </div>
         
