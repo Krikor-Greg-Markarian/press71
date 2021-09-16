@@ -37,7 +37,7 @@ function Footer() {
                 <div className="small2"></div>
               </div>
               <div class="flex-shrink w-96 h-16 ...">
-                <p className="text-white">
+                <p className="text-white text-sm">
                   {" "}
                   Health This is What physical Therapy Can Actually Solve
                 </p>
@@ -48,7 +48,7 @@ function Footer() {
                 <div className="small2"></div>
               </div>
               <div class="flex-shrink w-96 h-16 ...">
-                <p className="text-white">
+                <p className="text-white text-sm">
                   {" "}
                   Health This is What physical Therapy Can Actually Solve
                 </p>
