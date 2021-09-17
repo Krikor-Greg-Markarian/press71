@@ -38,8 +38,23 @@ export default function Home(props) {
 
       <section className="container mx-auto">
         <div class="md:grid grid-rows-3 grid-flow-col gap-4">
+          
           <Link rel="stylesheet" href="/secondpage">
-            <div class="row-span-3 bg-blue-200 dog md:dog w-full"></div>
+            <div class="row-span-3 bg-blue-200 dog md:dog w-full relative">
+              <div className = "flex justify-center items-center">
+              <button className = "bg-red-600 px-6 text-white absolute top-6">CORONAVIRUS</button>
+
+              <div className = "transform translate-y-48 text-2xl">
+              <p className = "text-white font-bold underline ">Coronavirus live updates:italy death toll nears 3,000</p>
+              <div className = "flex justify-center items center">
+                <p className = "text-white font-bold text-sm transform translate-y-10">LIVE  <span className = "text-white ml-5">BY:  <span className = "text-blue-600 text-sm">RASALINA</span>  </span> </p>
+              </div>
+              </div>
+           
+              </div>
+              
+            </div>
+            
           </Link>
 
           <div class="col-span-2 row-span-1 book mt-1"></div>
