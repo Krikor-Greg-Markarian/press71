@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import Footer from "../api/components/Footer";
 import Navbar from "../api/components/Navbar";
 import Navbar2 from "../api/components/Navbar2";
 import Allpostby from "./Allpostby";
@@ -61,7 +62,6 @@ function thirdpage() {
             </div>
 
             <div>
-               
               <div class="flex pt-4 ">
                 <div class="flex-shrink  ">
                   <p className="text-sm text-gray-400">
@@ -84,10 +84,60 @@ function thirdpage() {
         <div className="border-b-2"></div>
       </div>
 
-      <div className = "container mx-auto">
-          <p className = "font-bold">All post By: Rasalina De Willamson</p>
-          <Allpostby />
+      <div className="container mx-auto">
+        <p className="font-bold pb-6">All Post By:Rasallina De Willamson</p>
+
+        <div className="grid grid-cols-4">
+          <div className="col-span-1 ">
+            <Allpostby />
+          </div>
+          <div className="col-span-1">
+            <Allpostby />
+          </div>
+          <div className="col-span-1">
+            <Allpostby />
+          </div>
+          <div className="col-span-1">
+            <Allpostby />
+          </div>
+        </div>
+        <div className="grid grid-cols-4 pt-6">
+          <div className="col-span-1 ">
+            <Allpostby />
+          </div>
+          <div className="col-span-1">
+            <Allpostby />
+          </div>
+          <div className="col-span-1">
+            <Allpostby />
+          </div>
+          <div className="col-span-1">
+            <Allpostby />
+          </div>
+        </div>
+        <div className="grid grid-cols-4 pt-6">
+          <div className="col-span-1 ">
+            <Allpostby />
+          </div>
+          <div className="col-span-1">
+            <Allpostby />
+          </div>
+          <div className="col-span-1">
+            <Allpostby />
+          </div>
+          <div className="col-span-1">
+            <Allpostby />
+          </div>
+        </div>
+        
       </div>
+
+      <section className = "mt-8">
+      <Footer />
+      </section>
+      
+
+
     </div>
   );
 }
