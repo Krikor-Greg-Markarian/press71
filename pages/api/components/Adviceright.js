@@ -7,12 +7,12 @@ function Adviceright() {
         <div className="small"></div>
       </div>
       <div class="flex-shrink w-96 h-16 ">
-        <p className="inline text-gray-400">recenet</p>
+        <p className="inline text-gray-400 text-sm ">RECENT NEWS</p>
         <p className="inline ml-2">
-          By: <span className="inline text-blue-500">RASALINA</span>{" "}
+          By: <span className="inline text-blue-500 text-sm">RASALINA</span>{" "}
         </p>
-        <p className="text-sm">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        <p className="text-sm ">
+          Lorem, ipsum dolor sit amet sectetur adipisicing elit. Temporibus
           dolore, aspernatur.
         </p>
         <p className="text-sm"></p>
