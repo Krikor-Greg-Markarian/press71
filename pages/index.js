@@ -24,31 +24,33 @@ export default function Home(props) {
         <Navbar2 />
       </section>
 
-      <section className="container mx-auto pt-12 ">
+      <section className="container mx-auto pt-12 pb-6 ">
         <button className="bg-red-600 text-white text-sm font-bold px-4 py-1 inline">
           TRADING NOW
         </button>
-        <p className="inline ml-5 font-bold text-sm text-gray-600">
+        <p className="inline ml-5 font-bold text-sm text-gray-600 ">
           Trump sough to buy vaccine developer exclusively for US, say German
           officials updates
         </p>
       </section>
 
-      <section>
+      <section className="container mx-auto">
+        <div class="grid grid-rows-3 grid-flow-col gap-4">
+          <Link rel="stylesheet" href="/secondpage">
+            <div class="row-span-3 bg-blue-200 dog "></div>
+          </Link>
+
+          <div class="col-span-2 row-span-1 bg-blue-300 book "></div>
+          <div class="row-span-2 col-span-1 bg-blue-400 book"></div>
+          <div class="row-span-2 col-span-1 bg-blue-400 book"></div>
+        </div>
+      </section>
+
+      <section className="pt-4 pb-4">
         <div className="container mx-auto">
-          <div class="grid grid-rows-3 grid-flow-col">
-            <Link rel="stylesheet" href="/secondpage">
-              <div class="row-span-3 dog">1</div>
-            </Link>
-
-           
-
-            <div class="col-span-2 bg-blue-300">2</div>
-
-            <div className="grid grid-cols-2 gap-2">
-              <div class="row-span-1 bg-blue-400">3</div>
-              <div class="row-span-1 bg-blue-400">3</div>
-            </div>
+          <div className="font-bold">
+            Advice
+            <div className="float-right font-normal">VIEW ALL</div>
           </div>
         </div>
       </section>
@@ -60,7 +62,7 @@ export default function Home(props) {
               <div className="grid grid-cols-2">
                 <Fever />
 
-                <div>
+                <div className="md:flex md:flex-col">
                   <Adviceright />
                   <Adviceright />
                   <Adviceright />
@@ -72,7 +74,8 @@ export default function Home(props) {
                     <div className="gift2"></div>
                   </div>
                 </div>
-              </div>
+              </div>{" "}
+            
               <div className="grid grid-cols-2">
                 <div className="col-span-1 pt-6">
                   <Adviceright />
@@ -90,10 +93,8 @@ export default function Home(props) {
             <div>
               <Socialconnect />
             </div>
-         
-            </div>
           </div>
-        
+        </div>
       </section>
 
       <section className="pt-4 pb-4">
@@ -149,7 +150,7 @@ export default function Home(props) {
         </div>
       </div>
 
-      <section className="pt-6 text-center ">
+      <section className="pt-28 pb-24 text-center">
         <Table />
       </section>
 
