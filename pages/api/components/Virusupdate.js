@@ -7,8 +7,8 @@ function Virusupdate() {
         <div class="flex ">
           
           <div class="flex-grow ">
-            <p className="text-gray-400 text-sm pl-6">VIRUS UPDATE</p>
-            <p className = "pl-6 pr-1">
+            <p className="text-gray-400 text-sm pl-6 pb-2">VIRUS UPDATE</p>
+            <p className = "pl-6 pr-1 pb-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               nobis.
             </p>
