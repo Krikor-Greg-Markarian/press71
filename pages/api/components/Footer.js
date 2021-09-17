@@ -12,7 +12,7 @@ function Footer() {
   return (
     <div className="pt-8">
       <div className="bg-black ">
-        <div className="grid grid-cols-4">
+        <div className="md:grid grid-cols-4">
           <div className="col-span-1 pt-16 border-r-2 border-b-2">
             <div className="flex justify-center items-center">
               <div className="">
