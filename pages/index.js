@@ -35,7 +35,7 @@ export default function Home(props) {
       </section>
 
       <section className="container mx-auto">
-        <div class="grid grid-rows-3 grid-flow-col gap-4">
+        <div class="md:grid grid-rows-3 grid-flow-col gap-4">
           <Link rel="stylesheet" href="/secondpage">
             <div class="row-span-3 bg-blue-200 dog "></div>
           </Link>
@@ -62,7 +62,7 @@ export default function Home(props) {
               <div className="grid grid-cols-2">
                 <Fever />
 
-                <div className="md:flex md:flex-col">
+                <div className="border-8">
                   <Adviceright />
                   <Adviceright />
                   <Adviceright />
