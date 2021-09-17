@@ -88,11 +88,26 @@ export default function Home(props) {
 
                 <div className=" pt-8 pb-8">
                   <div className="flex justify-center items-center">
-                    <div className="gift2 w-full"></div>
+                    <div className="gift2 w-full relative">
+                      <div className = "container mx-auto">
+                        <div className = "absolute transform translate-y-8 translate-x-6">
+                        <p className = "text-white font-bold ">PRESS <span className = "text-red-600">71</span> </p>
+                        
+                        <p className = "text-white font-bold text-sm">Blog &amp; MagazineTheme</p>
+                        <div>
+                        <button className = "bg-red-600 text-white text-sm px-3  transform -translate-y-12 translate-x-32">Buy Now</button>
+                        </div>
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    
                   </div>
+                  
                 </div>
               </div>{" "}
-              <div className="md:grid grid-cols-2">
+              <div className="md:grid grid-cols-2 ">
                 <div className="col-span-1 pt-6">
                   <Adviceright />
                   <Adviceright />
