@@ -38,23 +38,29 @@ export default function Home(props) {
 
       <section className="container mx-auto">
         <div class="md:grid grid-rows-3 grid-flow-col gap-4">
-          
           <Link rel="stylesheet" href="/secondpage">
             <div class="row-span-3 bg-blue-200 dog md:dog w-full relative">
-              <div className = "flex justify-center items-center">
-              <button className = "bg-red-600 px-6 text-white absolute top-6">CORONAVIRUS</button>
+              <div className="flex justify-center items-center">
+                <button className="bg-red-600 px-6 text-white absolute top-6">
+                  CORONAVIRUS
+                </button>
 
-              <div className = "transform translate-y-48 text-2xl">
-              <p className = "text-white font-bold underline ">Coronavirus live updates:italy death toll nears 3,000</p>
-              <div className = "flex justify-center items center">
-                <p className = "text-white font-bold text-sm transform translate-y-10">LIVE  <span className = "text-white ml-5">BY:  <span className = "text-blue-600 text-sm">RASALINA</span>  </span> </p>
+                <div className="transform translate-y-48 text-2xl">
+                  <p className="text-white font-bold underline ">
+                    Coronavirus live updates:italy death toll nears 3,000
+                  </p>
+                  <div className="flex justify-center items center">
+                    <p className="text-white font-bold text-sm transform translate-y-10">
+                      LIVE{" "}
+                      <span className="text-white ml-5">
+                        BY:{" "}
+                        <span className="text-blue-600 text-sm">RASALINA</span>{" "}
+                      </span>{" "}
+                    </p>
+                  </div>
+                </div>
               </div>
-              </div>
-           
-              </div>
-              
             </div>
-            
           </Link>
 
           <div class="col-span-2 row-span-1 book mt-1"></div>
@@ -79,7 +85,7 @@ export default function Home(props) {
               <div className="md:grid grid-cols-2 ">
                 <Fever />
 
-                <div>
+                <div className="border-8">
                   <Adviceright />
                   <Adviceright />
                   <Adviceright />
@@ -89,22 +95,24 @@ export default function Home(props) {
                 <div className=" pt-8 pb-8">
                   <div className="flex justify-center items-center">
                     <div className="gift2 w-full relative">
-                      <div className = "container mx-auto">
-                        <div className = "absolute transform translate-y-8 translate-x-6">
-                        <p className = "text-white font-bold ">PRESS <span className = "text-red-600">71</span> </p>
-                        
-                        <p className = "text-white font-bold text-sm">Blog &amp; MagazineTheme</p>
-                        <div>
-                        <button className = "bg-red-600 text-white text-sm px-3  transform -translate-y-12 translate-x-32">Buy Now</button>
+                      <div className="container mx-auto">
+                        <div className="absolute transform translate-y-8 translate-x-6">
+                          <p className="text-white font-bold ">
+                            PRESS <span className="text-red-600">71</span>{" "}
+                          </p>
+
+                          <p className="text-white font-bold text-sm">
+                            Blog &amp; MagazineTheme
+                          </p>
+                          <div>
+                            <button className="bg-red-600 text-white text-sm px-3  transform -translate-y-12 translate-x-32">
+                              Buy Now
+                            </button>
+                          </div>
                         </div>
-                        </div>
-                        
                       </div>
-                      
                     </div>
-                    
                   </div>
-                  
                 </div>
               </div>{" "}
               <div className="md:grid grid-cols-2 ">
@@ -148,19 +156,6 @@ export default function Home(props) {
             <div className="container mx-auto  w-10/12 border-double border-"></div>{" "}
           </div>
         </div>
-
-       
-      </section>
-
-    
-
-      <section className="pt-4 pb-4">
-        <div className="container mx-auto">
-          <div className="font-bold">
-            Advice
-            <div className="float-right font-normal">VIEW ALL</div>
-          </div>
-        </div>
       </section>
 
       <div className="container mx-auto">
@@ -171,23 +166,21 @@ export default function Home(props) {
             <Smalladvice />
           </div>
 
-
           <div className="flex justify-center items-center">
             <div className="moon relative">
-              <div className = "flex justify-center items-center">
+              <div className="flex justify-center items-center">
                 <p className="underline bg-white p-2 absolute w-10/12 -bottom-8">
                   Virus confronts leaders with one of modern history's gravest
                   challenges
                 </p>
               </div>
-              <div className = "flex justify-center items-center w-full">
+              <div className="flex justify-center items-center w-full">
                 <button className="text-white bg-red-600 text-sm px-3 absolute">
                   VIRUS
                 </button>
               </div>
             </div>
           </div>
-
 
           <div className="sm:mt-20 md:mt-5">
             <Virusupdate />
