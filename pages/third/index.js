@@ -38,11 +38,11 @@ function thirdpage() {
           <div className="grid grid-cols-2">
             <div className="col-span-1">
               <div className="container mx-auto">
-                <div class="flex pt-8">
-                  <div class="flex-shrink">
+                <div className="flex pt-8">
+                  <div className="flex-shrink">
                     <div className="iconprofile2"></div>
                   </div>
-                  <div class="flex-shrink ">
+                  <div className="flex-shrink ">
                     <p className="font-bold pl-2">Rasalina De Willamson</p>
                     <p className="text-gray-400 text-sm inline pl-2">
                       64 Articles Written{" "}
@@ -62,8 +62,8 @@ function thirdpage() {
             </div>
 
             <div>
-              <div class="flex pt-4 ">
-                <div class="flex-shrink  ">
+              <div className="flex pt-4 ">
+                <div className="flex-shrink  ">
                   <p className="text-sm text-gray-400">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptate, assumenda molestias et dolore tempore excepturi
@@ -72,7 +72,7 @@ function thirdpage() {
                     recusandae.
                   </p>
                 </div>
-                <div class="flex-shrink ">
+                <div className="flex-shrink ">
                   <div className="space"></div>
                 </div>
               </div>

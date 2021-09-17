@@ -34,11 +34,11 @@ function Footer() {
               <p className="text-white text-sm ">
                 RECENT POSTS{" "}
                 <div>
-                  <div class="flex pt-2">
-                    <div class="flex-grow">
+                  <div className="flex pt-2">
+                    <div className="flex-grow">
                       <div className="small2"></div>
                     </div>
-                    <div class="flex-shrink">
+                    <div className="flex-shrink">
                       <p className="text-sm pl-2">
                         Health This is what physical Therapy Can Actually Solve
                       </p>
@@ -46,13 +46,13 @@ function Footer() {
                         DECEMBER 30-2020
                       </p>
                     </div>
-                    <div class="flex-grow"></div>
+                    <div className="flex-grow"></div>
                   </div>
-                  <div class="flex pt-2">
-                    <div class="flex-grow">
+                  <div className="flex pt-2">
+                    <div className="flex-grow">
                       <div className="small2"></div>
                     </div>
-                    <div class="flex-shrink">
+                    <div className="flex-shrink">
                       <p className="text-sm pl-2">
                         Health This is what physical Therapy Can Actually Solve
                       </p>
@@ -60,7 +60,7 @@ function Footer() {
                         DECEMBER 30-2020
                       </p>
                     </div>
-                    <div class="flex-grow"></div>
+                    <div className="flex-grow"></div>
                   </div>
                 </div>{" "}
               </p>

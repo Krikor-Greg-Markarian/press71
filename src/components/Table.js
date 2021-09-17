@@ -4,7 +4,7 @@ function Table() {
     return (
         
              <div className="container mx-auto">
-          <table class="table-auto border-2">
+          <table className="table-auto border-2">
             <thead>
               <tr>
                 <th className = "px-12">Country/Region</th>
@@ -22,7 +22,7 @@ function Table() {
                 <td className="px-12 border-2">74,035,31</td>
                 <td className="px-12 border-2">4,035,318</td>
               </tr>
-              <tr class="bg-emerald-200">
+              <tr className="bg-emerald-200">
                 <td className="border-2 p-2">Bangladesh</td>
                 <td className="px-12 border-2">24,035,318</td>
                 <td className="px-12 border-2">35,318</td>

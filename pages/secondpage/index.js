@@ -173,11 +173,11 @@ function Secondpage() {
 
             <div className="container mx-auto pb-6 pt-6">
               <div className="bg-white p-4">
-                <div class="flex">
-                  <div class="flex-shrink pt-6 pr-4">
+                <div className="flex">
+                  <div className="flex-shrink pt-6 pr-4">
                     <div className="small3 mt-4"></div>
                   </div>
-                  <div class="flex-shrink ">
+                  <div className="flex-shrink ">
                     <p className="text-sm text-gray-400 pt-2">written by</p>
                     <p className="text-2xl font-bold pt-2">
                       Rosalina D.William

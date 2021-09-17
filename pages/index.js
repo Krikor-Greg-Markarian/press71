@@ -1,20 +1,20 @@
 import axios from "axios";
-import Navbar from "./api/components/Navbar";
-import Navbar2 from "./api/components/Navbar2";
-import Footer from "./api/components/Footer";
-import Table from "./api/components/Table";
-import Latestarticle from "./api/components/Latestarticle";
-import Adviceright from "./api/components/adviceright";
-import Fever from "./api/components/Fever";
-import Adviceleft from "./api/components/Adviceleft";
-import Smalladvice from "./api/components/Smalladvice";
-import Virusupdate from "./api/components/Virusupdate";
+import Navbar from "../src/components/Navbar";
+import Navbar2 from "../src/components/Navbar2";
+import Footer from "../src/components/Footer";
+import Table from "../src/components/Table";
+import Latestarticle from "../src/components/Latestarticle";
+import Adviceright from "../src/components/adviceright";
+import Fever from "../src/components/Fever";
+import Adviceleft from "../src/components/Adviceleft";
+import Smalladvice from "../src/components/Smalladvice";
+import Virusupdate from "../src/components/Virusupdate";
 import Link from "next/link";
 
-import Socialconnect from "./api/components/Socialconnect";
-import Mustread from "./api/components/Mustread";
-import Subscribenwletter from "./api/components/Subscribenwletter";
-import ADvertisement from "./api/components/ADvertisement";
+import Socialconnect from "../src/components/Socialconnect";
+import Mustread from "../src/components/Mustread";
+import Subscribenwletter from "../src/components/Subscribenwletter";
+import ADvertisement from "../src/components/ADvertisement";
 
 export default function Home(props) {
   return (
@@ -37,9 +37,9 @@ export default function Home(props) {
       </section>
 
       <section className="container mx-auto">
-        <div class="md:grid grid-rows-3 grid-flow-col gap-4">
+        <div className="md:grid grid-rows-3 grid-flow-col gap-4">
           <Link rel="stylesheet" href="/secondpage">
-            <div class="row-span-3 bg-blue-200 dog md:dog w-full relative">
+            <div className="row-span-3 bg-blue-200 dog md:dog w-full relative">
               <div className="flex justify-center items-center">
                 <button className="bg-red-600 px-6 text-white absolute top-6">
                   CORONAVIRUS
@@ -63,9 +63,9 @@ export default function Home(props) {
             </div>
           </Link>
 
-          <div class="col-span-2 row-span-1 book mt-1"></div>
-          <div class="row-span-2 col-span-1 book mt-1"></div>
-          <div class="row-span-2 col-span-1 book mt-1"></div>
+          <div className="col-span-2 row-span-1 book mt-1"></div>
+          <div className="row-span-2 col-span-1 book mt-1"></div>
+          <div className="row-span-2 col-span-1 book mt-1"></div>
         </div>
       </section>
 
