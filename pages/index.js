@@ -3,7 +3,6 @@ import Navbar from "./api/components/Navbar";
 import Navbar2 from "./api/components/Navbar2";
 import Footer from "./api/components/Footer";
 import Table from "./api/components/Table";
-import Advice from "./api/components/Advice";
 import Latestarticle from "./api/components/Latestarticle";
 import Adviceright from "./api/components/adviceright";
 import Fever from "./api/components/Fever";
@@ -13,6 +12,9 @@ import Virusupdate from "./api/components/Virusupdate";
 import Link from "next/link";
 
 import Socialconnect from "./api/components/Socialconnect";
+import Mustread from "./api/components/Mustread";
+import Subscribenwletter from "./api/components/Subscribenwletter";
+import ADvertisement from "./api/components/ADvertisement";
 
 export default function Home(props) {
   return (
@@ -24,7 +26,7 @@ export default function Home(props) {
         <Navbar2 />
       </section>
 
-      <section className="container mx-auto pt-12 pb-6 ">
+      <section className="container mx-auto pt-12 pb-6 b">
         <button className="bg-red-600 text-white text-sm font-bold px-4 py-1 inline">
           TRADING NOW
         </button>
@@ -37,16 +39,16 @@ export default function Home(props) {
       <section className="container mx-auto">
         <div class="md:grid grid-rows-3 grid-flow-col gap-4">
           <Link rel="stylesheet" href="/secondpage">
-            <div class="row-span-3 bg-blue-200 dog "></div>
+            <div class="row-span-3 bg-blue-200 dog md:dog w-full"></div>
           </Link>
 
-          <div class="col-span-2 row-span-1 bg-blue-300 book "></div>
-          <div class="row-span-2 col-span-1 bg-blue-400 book"></div>
-          <div class="row-span-2 col-span-1 bg-blue-400 book"></div>
+          <div class="col-span-2 row-span-1 book mt-1"></div>
+          <div class="row-span-2 col-span-1 book mt-1"></div>
+          <div class="row-span-2 col-span-1 book mt-1"></div>
         </div>
       </section>
 
-      <section className="pt-4 pb-4">
+      <section className="pt-4 pb-4 ">
         <div className="container mx-auto">
           <div className="font-bold">
             Advice
@@ -55,14 +57,14 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className="pt-4 pb-4">
+      <section className="pt-4 pb-4 ">
         <div className="container mx-auto">
           <div className="grid grid-cols-4">
-            <div className="col-span-3">
-              <div className="grid grid-cols-2">
+            <div className="col-span-3 ">
+              <div className="md:grid grid-cols-2 ">
                 <Fever />
 
-                <div className="border-8">
+                <div>
                   <Adviceright />
                   <Adviceright />
                   <Adviceright />
@@ -71,12 +73,11 @@ export default function Home(props) {
 
                 <div className=" pt-8 pb-8">
                   <div className="flex justify-center items-center">
-                    <div className="gift2"></div>
+                    <div className="gift2 w-full"></div>
                   </div>
                 </div>
               </div>{" "}
-            
-              <div className="grid grid-cols-2">
+              <div className="md:grid grid-cols-2">
                 <div className="col-span-1 pt-6">
                   <Adviceright />
                   <Adviceright />
@@ -90,25 +91,38 @@ export default function Home(props) {
               </div>
             </div>
 
-            <div>
+            <section>
               <Socialconnect />
-            </div>
+              <div>
+                <div className="border-2 p-2">
+                  <p className="font-bold">Must Read</p>
+                  <Mustread />
+                  <Mustread />
+                  <Mustread />
+                  <Mustread />
+                </div>
+              </div>
+
+              <Subscribenwletter />
+              <ADvertisement />
+            </section>
           </div>
         </div>
       </section>
 
       <section className="pt-4 pb-4">
         <div className="container mx-auto">
-          <div className="font-bold">
+          <div className="font-bold ">
             Advice
             <div className="float-right font-normal">VIEW ALL</div>
+            <div className="container mx-auto  w-10/12 border-double border-"></div>{" "}
           </div>
         </div>
+
+       
       </section>
 
-      <section>
-        <Advice />
-      </section>
+    
 
       <section className="pt-4 pb-4">
         <div className="container mx-auto">
@@ -120,8 +134,8 @@ export default function Home(props) {
       </section>
 
       <div className="container mx-auto">
-        <div className="grid grid-cols-3">
-          <div className="col-span-1 ">
+        <div className="md:grid grid-cols-3">
+          <div className="col-span-1 sm:mb-10 ">
             <Smalladvice />
             <Smalladvice />
             <Smalladvice />
@@ -141,7 +155,7 @@ export default function Home(props) {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="sm:mt-20 md:mt-5">
             <Virusupdate />
             <Virusupdate />
             <Virusupdate />
@@ -164,7 +178,14 @@ export default function Home(props) {
       </section>
 
       <section>
-        <Latestarticle />
+        <div className="container mx-auto ">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Latestarticle />
+            <Latestarticle />
+            <Latestarticle />
+            <Latestarticle />
+          </div>
+        </div>
       </section>
 
       <section>
