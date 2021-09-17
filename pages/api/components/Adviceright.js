@@ -2,8 +2,8 @@ import React from "react";
 
 function Adviceright() {
   return (
-    <div class="flex">
-      <div class="flex-grow w-16 h-16 ">
+    <div class="flex mb-4">
+      <div class="flex-grow w-16 h-16">
         <div className="small"></div>
       </div>
       <div class="flex-shrink w-96 h-16 ">
