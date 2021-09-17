@@ -155,21 +155,25 @@ export default function Home(props) {
             <Smalladvice />
             <Smalladvice />
           </div>
+
+
           <div className="flex justify-center items-center">
             <div className="moon relative">
-              <div>
-                <p className="underline bg-white p-2 absolute -bottom-12 w-9/12 left-16">
+              <div className = "flex justify-center items-center">
+                <p className="underline bg-white p-2 absolute w-10/12 -bottom-8">
                   Virus confronts leaders with one of modern history's gravest
                   challenges
                 </p>
               </div>
-              <div>
-                <button className="text-white bg-red-600 text-sm px-3 absolute left-36 -top-2">
+              <div className = "flex justify-center items-center w-full">
+                <button className="text-white bg-red-600 text-sm px-3 absolute">
                   VIRUS
                 </button>
               </div>
             </div>
           </div>
+
+
           <div className="sm:mt-20 md:mt-5">
             <Virusupdate />
             <Virusupdate />
