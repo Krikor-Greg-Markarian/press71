@@ -222,6 +222,16 @@ body {
   }
 
 
+  .red{
+    background-image: url("https://www.publicdomainpictures.net/pictures/30000/velka/solid-red-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+  }
+
+
 
 
 
