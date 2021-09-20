@@ -4,7 +4,6 @@ import Navbar2 from "../src/components/Navbar2";
 import Footer from "../src/components/Footer";
 import Table from "../src/components/Table";
 import Latestarticle from "../src/components/Latestarticle";
-import Adviceright from "../src/components/adviceright";
 import Fever from "../src/components/Fever";
 import Adviceleft from "../src/components/Adviceleft";
 import Smalladvice from "../src/components/Smalladvice";
@@ -39,7 +38,7 @@ export default function Home(props) {
 
       <section className="container mx-auto">
         <div className="md:grid grid-rows-3 grid-flow-col gap-4">
-          <Link rel="stylesheet" href="/secondpage">
+          <Link rel="stylesheet" href="/details">
             <div className="row-span-3 bg-blue-200 dog md:dog w-full relative">
               <div className="flex justify-center items-center">
                 <button className="bg-red-600 px-6 text-white absolute top-6">
@@ -86,8 +85,10 @@ export default function Home(props) {
               <div className="md:grid grid-cols-2">
                 <Fever />
 
-                <div className="pr-20 ">
+                <div className="mr-30">
+                  
                   <RecentrNews />
+                  
                   <RecentrNews />
                   <RecentrNews />
                   <RecentrNews />
@@ -116,7 +117,7 @@ export default function Home(props) {
                   </div>
                 </div>
               </div>{" "}
-              <div className="md:grid grid-cols-2 pr-20 ">
+              <div className="md:grid grid-cols-2 ">
                 <div className="col-span-1 pt-6">
                   <RecentrNews />
                   <RecentrNews />
