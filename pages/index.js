@@ -69,11 +69,27 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className="pt-4 pb-4 ">
-        <div className="container mx-auto">
+      <section className="pt-4 pb-4">
+        {/* <div className="container mx-auto">
           <div className="font-bold">
             Advice
             <div className="float-right font-normal">VIEW ALL</div>
+          </div>
+        </div> */}
+        <div className="text-center">
+          <div class="flex container mx-auto pt-6 pb-6">
+            
+              <div class="flex-grow">
+                <p className="font-bold">Advice</p>
+              </div>
+            
+
+            <div class="flex-grow w-8/12">
+              <p className="border-double border-2 pt-1"></p>
+            </div>
+            <div class="flex-grow">
+              <p className="float-right">View All</p>
+            </div>
           </div>
         </div>
       </section>
@@ -82,25 +98,36 @@ export default function Home(props) {
         <div className="container mx-auto">
           <div className="grid grid-cols-4">
             <div className="col-span-3 ">
-              <div className="md:grid grid-cols-2">
-                <Fever />
+              <div className="md:grid grid-cols-2 gap-2">
+                {props.posts_data.map((item, idx) => (
+                  <Fever
+                    key={idx}
+                    coronabutton={item.coronabutton}
+                    why={item.why}
+                    asupermarket={item.asupermarket}
+                  />
+                ))}
 
-                <div className="mr-30">
-                  
-                  <RecentrNews />
-                  
-                  <RecentrNews />
-                  <RecentrNews />
-                  <RecentrNews />
+                <div className="mr-30 sm:mr-30">
+                  {props.posts_data.map((item, idx) => (
+                    <RecentrNews
+                      key={idx}
+                      recentnews={item.recentnews}
+                      ibuprofen={item.ibuprofen}
+                      exclusive={item.exclusive}
+                      trump={item.trump}
+                      coronavirus={item.coronavirus}
+                    />
+                  ))}
                 </div>
 
-                <div className=" pt-8 pb-8">
-                  <div className="flex justify-center items-center">
-                    <div className="gift2 w-full relative">
+                <div className=" pt-8 pb-8 w-screen">
+                  <div className="flex justify-start">
+                    <div className="gift2 relative">
                       <div className="container mx-auto">
                         <div className="absolute transform translate-y-8 translate-x-6">
                           <p className="text-white font-bold ">
-                            PRESS <span className="text-red-600">71</span>{" "}
+                            PRESS<span className="text-red-600">71</span>{" "}
                           </p>
 
                           <p className="text-white font-bold text-sm">
@@ -126,7 +153,7 @@ export default function Home(props) {
                   <RecentrNews />
                 </div>
                 <div className="pt-6">
-                  <Adviceleft />
+                  <Fever />
                 </div>
               </div>
             </div>
@@ -195,9 +222,12 @@ export default function Home(props) {
       </div>
 
       <section className="pt-28 pb-24 text-center">
-        
+        <div className="container mx-auto flex justify-center items center transform -translate-x-8">
+          <p className="text-sm bg-red-600 text-white px-2">
+            CORONA19 LIVE DATA
+          </p>
+        </div>
         <Table />
-        
       </section>
 
       <section className="pt-4 pb-4">
@@ -232,7 +262,8 @@ export async function getServerSideProps(context) {
   return {
     props: {
       posts_data: response.data.stories,
-      // advice: response.data.advice
+
+      // posts_data: response.data.stories2,
     }, // will be passed to the page component as props
   };
 }
