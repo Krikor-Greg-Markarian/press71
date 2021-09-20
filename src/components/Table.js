@@ -2,17 +2,18 @@ import React from "react";
 
 function Table() {
   return (
-    <div className="container mx-auto">
-      <table className="table-auto border-2">
+    <div className="container mx-auto ">
+      <table className="table-auto border-2 ">
+        
         <thead>
           <tr>
-            
             <th className="px-12">Country/Region</th>
             <th className="px-2 border-2">Confirmed cases</th>
-           
+
             <th className="px-12 border-2">Death</th>
             <th className="px-12 border-2">Recovered</th>
             <th className="px-12 border-2">Active cases</th>
+            
           </tr>
         </thead>
         <tbody>
