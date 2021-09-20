@@ -20,16 +20,11 @@ function Navbar() {
               </li>
               <li className="text-sm text-gray-400 inline ml-2 font-bold">
                 <a href="">ACCOUNT</a>
-                
               </li>
-              
             </ul>
-           
           </div>
         </div>
-       
       </div>
-      
     </div>
   );
 }
