@@ -1,12 +1,18 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  IoIosArrowRoundForward,
+} from "react-icons/fa";
 import Mustread from "./Mustread";
 import Subscribenwletter from "./Subscribenwletter";
 import ADvertisement from "./ADvertisement";
 
 function Socialconnect() {
   return (
-    <div>
+    <div className="">
       <div className="container mx-auto border-2 p-3 mb-5 ">
         <p className="font-bold">Social Connect</p>
         <div className="pt-2 pb-2">
@@ -23,7 +29,7 @@ function Socialconnect() {
               </div>
 
               <div className="flex-shrink w-96 h-92 ">
-                <p className="text-gray-500 pr-4">Follower</p>
+                <p className="text-gray-500 pr-4">Follower </p>
               </div>
             </div>
           </div>
