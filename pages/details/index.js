@@ -125,8 +125,8 @@ function Secondpage() {
               <span className="font-bold  float-right">SocialShare</span>{" "}
             </p>
 
-            <div class="pt-2 pb-2">
-              <div class="pt-2 pb-12">
+            <div className="pt-2 pb-2">
+              <div className="pt-2 pb-12">
                 <p className="border-2 px-4 py-1 inline text-gray-400">
                   popular
                 </p>
