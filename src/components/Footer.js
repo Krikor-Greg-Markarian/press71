@@ -15,7 +15,7 @@ function Footer() {
         <div className="md:grid grid-cols-4">
           <div className="col-span-1 pt-16 border-r-2 border-b-2">
             <div className="flex justify-center items-center">
-              <div className="">
+              <div className="sm:mb-16">
                 <p className="font-bold text-white text-2xl">
                   PRESS <span className="text-red-500">71</span>{" "}
                 </p>
@@ -29,10 +29,11 @@ function Footer() {
               </div>
             </div>
           </div>
+
           <div className="col-span-1 border-r-2 border-b-2 p-4">
             <div className="flex justify-center items-center">
-              <p className="text-white text-sm ">
-                RECENT POSTS{" "}
+              <div className="text-white text-sm">
+                <span className="font-bold"> RECENT POSTS</span>
                 <div>
                   <div className="flex pt-2">
                     <div className="flex-grow">
@@ -62,8 +63,8 @@ function Footer() {
                     </div>
                     <div className="flex-grow"></div>
                   </div>
-                </div>{" "}
-              </p>
+                </div>
+              </div>
             </div>
           </div>
 
