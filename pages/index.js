@@ -116,7 +116,7 @@ export default function Home(props) {
                   </div>
                 </div>
               </div>{" "}
-              <div className="md:grid grid-cols-2 ">
+              <div className="md:grid grid-cols-2 pr-20 ">
                 <div className="col-span-1 pt-6">
                   <RecentrNews />
                   <RecentrNews />
