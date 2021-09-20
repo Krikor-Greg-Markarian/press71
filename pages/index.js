@@ -15,6 +15,7 @@ import Socialconnect from "../src/components/Socialconnect";
 import Mustread from "../src/components/Mustread";
 import Subscribenwletter from "../src/components/Subscribenwletter";
 import ADvertisement from "../src/components/ADvertisement";
+import RecentrNews from "../src/components/RecentrNews";
 
 export default function Home(props) {
   return (
@@ -78,18 +79,18 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className="pt-4 pb-4 ">
+      <section className="pt-4 pb-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-4">
-            <div className="col-span-3 ">
-              <div className="md:grid grid-cols-2 ">
+            <div className="col-span-3">
+              <div className="md:grid grid-cols-2">
                 <Fever />
 
-                <div className="border-8">
-                  <Adviceright />
-                  <Adviceright />
-                  <Adviceright />
-                  <Adviceright />
+                <div className="pr-20 ">
+                  <RecentrNews />
+                  <RecentrNews />
+                  <RecentrNews />
+                  <RecentrNews />
                 </div>
 
                 <div className=" pt-8 pb-8">
@@ -117,11 +118,11 @@ export default function Home(props) {
               </div>{" "}
               <div className="md:grid grid-cols-2 ">
                 <div className="col-span-1 pt-6">
-                  <Adviceright />
-                  <Adviceright />
-                  <Adviceright />
-                  <Adviceright />
-                  <Adviceright />
+                  <RecentrNews />
+                  <RecentrNews />
+                  <RecentrNews />
+                  <RecentrNews />
+                  <RecentrNews />
                 </div>
                 <div className="pt-6">
                   <Adviceleft />
@@ -131,6 +132,7 @@ export default function Home(props) {
 
             <section>
               <Socialconnect />
+
               <div>
                 <div className="border-2 p-2">
                   <p className="font-bold">Must Read</p>
