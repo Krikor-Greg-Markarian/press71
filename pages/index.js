@@ -82,7 +82,7 @@ export default function Home(props) {
       <section className="pt-4 pb-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-4">
-            <div className="col-span-3">
+            <div className="col-span-3 ">
               <div className="md:grid grid-cols-2">
                 <Fever />
 
@@ -171,7 +171,7 @@ export default function Home(props) {
           <div className="flex justify-center items-center">
             <div className="moon relative">
               <div className="flex justify-center items-center">
-                <p className="underline bg-white p-2 absolute w-10/12 -bottom-8">
+                <p className="underline bg-white p-2 absolute w-10/12 -bottom-8 font-bold text-sm">
                   Virus confronts leaders with one of modern history's gravest
                   challenges
                 </p>
@@ -194,7 +194,9 @@ export default function Home(props) {
       </div>
 
       <section className="pt-28 pb-24 text-center">
+        
         <Table />
+        
       </section>
 
       <section className="pt-4 pb-4">
