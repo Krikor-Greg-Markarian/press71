@@ -1,8 +1,8 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import Footer from "../api/components/Footer";
-import Navbar from "../api/components/Navbar";
-import Navbar2 from "../api/components/Navbar2";
+import Footer from "../../src/components/Footer";
+import Navbar2 from "../../src/components/Navbar2";
+import Navbar from "../details/Navbar";
 import Allpostby from "./Allpostby";
 
 function thirdpage() {
