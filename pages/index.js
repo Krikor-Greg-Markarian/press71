@@ -70,28 +70,25 @@ export default function Home(props) {
       </section>
 
       <section className="pt-4 pb-4">
-        {/* <div className="container mx-auto">
-          <div className="font-bold">
-            Advice
-            <div className="float-right font-normal">VIEW ALL</div>
-          </div>
-        </div> */}
-        <div className="text-center">
-          <div class="flex container mx-auto pt-6 pb-6">
-            
-              <div class="flex-grow">
-                <p className="font-bold">Advice</p>
-              </div>
-            
+        
 
-            <div class="flex-grow w-8/12">
-              <p className="border-double border-2 pt-1"></p>
-            </div>
-            <div class="flex-grow">
-              <p className="float-right">View All</p>
-            </div>
-          </div>
+
+
+        <div className = "container mx-auto">
+        <div className="flex">
+  <div className="flex-shrink">
+        <p className = "font-bold">Advice</p>
+  </div>
+  <div className="flex-grow flex justify-center items-center">
+    <div className = "border-double border-2 w-11/12"></div>
+  </div>
+  <div className="flex-shrink">
+    <p className = "font-bold text-sm">view All</p>
+  </div>
+</div>
         </div>
+
+
       </section>
 
       <section className="pt-4 pb-4">
@@ -99,14 +96,11 @@ export default function Home(props) {
           <div className="grid grid-cols-4">
             <div className="col-span-3 ">
               <div className="md:grid grid-cols-2 gap-2">
-                {props.posts_data.map((item, idx) => (
-                  <Fever
-                    key={idx}
-                    coronabutton={item.coronabutton}
-                    why={item.why}
-                    asupermarket={item.asupermarket}
-                  />
-                ))}
+                <Fever
+                  coronabutton={props.coverStory.coronabutton}
+                  why={props.coverStory.why}
+                  asupermarket={props.coverStory.asupermarket}
+                />
 
                 <div className="mr-30 sm:mr-30">
                   {props.posts_data.map((item, idx) => (
@@ -146,14 +140,24 @@ export default function Home(props) {
               </div>{" "}
               <div className="md:grid grid-cols-2 ">
                 <div className="col-span-1 pt-6">
-                  <RecentrNews />
-                  <RecentrNews />
-                  <RecentrNews />
-                  <RecentrNews />
-                  <RecentrNews />
+                  {props.posts_data.map((item, idx) => (
+                    <RecentrNews
+                      key={idx}
+                      recentnews={item.recentnews}
+                      ibuprofen={item.ibuprofen}
+                      exclusive={item.exclusive}
+                      trump={item.trump}
+                      coronavirus={item.coronavirus}
+                    />
+                  ))}
                 </div>
+
                 <div className="pt-6">
-                  <Fever />
+                  <Fever
+                    coronabutton={props.coverStory.coronabutton}
+                    why={props.coverStory.why}
+                    asupermarket={props.coverStory.asupermarket}
+                  />
                 </div>
               </div>
             </div>
@@ -191,9 +195,13 @@ export default function Home(props) {
       <div className="container mx-auto">
         <div className="md:grid grid-cols-3">
           <div className="col-span-1 sm:mb-10 ">
-            <Smalladvice />
-            <Smalladvice />
-            <Smalladvice />
+            {props.leftsection.map((item, idx) => (
+              <Smalladvice
+                key={idx}
+                Stories={item.Stories}
+                adviceCorona={item.adviceCorona}
+              />
+            ))}
           </div>
 
           <div className="flex justify-center items-center">
@@ -213,10 +221,13 @@ export default function Home(props) {
           </div>
 
           <div className="sm:mt-20 md:mt-5">
-            <Virusupdate />
-            <Virusupdate />
-            <Virusupdate />
-            <Virusupdate />
+            {props.rightsection.map((item, idx) => (
+              <Virusupdate
+                key={idx}
+                Stories={item.Stories}
+                adviceCorona={item.adviceCorona}
+              />
+            ))}
           </div>
         </div>
       </div>
@@ -242,10 +253,14 @@ export default function Home(props) {
       <section>
         <div className="container mx-auto ">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <Latestarticle />
-            <Latestarticle />
-            <Latestarticle />
-            <Latestarticle />
+          {props.latestArticles.map((item, idx) => (
+              <Latestarticle
+                key={idx}
+                forteen = {item.forteen}
+                asupermarket2 = {item.asupermarket2}
+              />
+            ))}
+            
           </div>
         </div>
       </section>
@@ -262,8 +277,10 @@ export async function getServerSideProps(context) {
   return {
     props: {
       posts_data: response.data.stories,
-
-      // posts_data: response.data.stories2,
+      coverStory: response.data.coverStory,
+      leftsection: response.data.advice.leftsection,
+      rightsection: response.data.advice.rightsection,
+      latestArticles: response.data.latestArticles.box,
     }, // will be passed to the page component as props
   };
 }
