@@ -3,7 +3,7 @@ import React from 'react'
 function Smalladvice(props) {
     return (
         
-            <div>
+            <div className = "pr-6">
                 <p className = "text-gray-500 text-sm pt-4">{props.Stories}</p>
                 <p className = "text-sm pt-2">{props.adviceCorona}</p>
                 <p className = "text-gray-500 text-sm pt-2">34 MINUTES AGO </p>
