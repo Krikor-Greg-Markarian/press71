@@ -44,12 +44,12 @@ export default function thirdpage(props) {
                     <div className="iconprofile2"></div>
                   </div>
                   <div className="flex-shrink ">
-                    <p className="font-bold pl-2">Rasalina De Willamson</p>
+                    <p className="font-bold pl-2">{props.rasalina.name}</p>
                     <p className="text-gray-400 text-sm inline pl-2">
-                      64 Articles Written{" "}
+                      {props.rasalina.articles}
                       <span className="text-gray-400 text-sm inline">
-                        2comments
-                      </span>{" "}
+                        
+                      </span>
                     </p>
                     <div className="pl-2">
                       <FaFacebook className="text-blue-600 inline " />
@@ -63,18 +63,16 @@ export default function thirdpage(props) {
             </div>
 
             <div>
-              <div className="flex pt-4 ">
+              <div className="flex pt-4 items-center ">
                 <div className="flex-shrink  ">
                   <p className="text-sm text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptate, assumenda molestias et dolore tempore excepturi
-                    sequi! Hic, in voluptates exercitationem, necessitatibus
-                    dicta cum amet et, doloremque ratione illum quasi
-                    recusandae.
+                   {props.text.lorem}
                   </p>
                 </div>
                 <div className="flex-shrink ">
+                  
                   <div className="space"></div>
+                  
                 </div>
               </div>
             </div>
@@ -144,10 +142,11 @@ export default function thirdpage(props) {
 }
 
 export async function getServerSideProps(context) {
-  const response = await axios.get("http://localhost:3000/api/detailPosts");
+  const response = await axios.get("http://localhost:3000/api/detaillPosts");
   return {
     props: {
       rasalina: response.data.rasalina,
+      text: response.data.text,
       
 
       // sectionAlone: response.data.sectionAlone,
