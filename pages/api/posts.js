@@ -5,8 +5,7 @@ export default function handler(req, res) {
         recentnews: "RECENT NEWS",
         ibuprofen:
           "Ibuprofen should not be used for managing symptoms.say doctors and scientists",
-        exclusive:
-          "Exlusive: Amazon Confirms First Known Coronavirus Case in an Ameican Warehouse",
+    
       },
       {
         recentnews: "RECENT NEWS",
