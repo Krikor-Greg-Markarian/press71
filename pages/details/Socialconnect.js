@@ -86,23 +86,11 @@ function Socialconnect() {
           </div>
         </div>
 
-        <div className="border-2 p-4">
-          <div className="container mx-auto">
-            <p className="font-bold pt-2 pb-2">Must Read</p>
-            <Mustread />
-            <Mustread />
-            <Mustread />
-            <Mustread />
-          </div>
-        </div>
+        
 
-        <div className="border-2 mt-4">
-          <Subscribenwletter />
-        </div>
+       
 
-        <div className="border-2 mt-4">
-          <ADvertisement />
-        </div>
+        
       </div>
     
   );
