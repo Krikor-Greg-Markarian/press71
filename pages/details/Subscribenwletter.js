@@ -18,7 +18,7 @@ function Subscribenwletter() {
                       />
                     </div>
                     <div className="flex justify-center items-center ">
-                      <button className="bg-black text-white text-sm px-14">
+                      <button className="bg-black text-white text-sm px-14 ">
                         SUBSCRIBE NOW
                       </button>
                     </div>
