@@ -18,7 +18,7 @@ function RecentrNews(props) {
           <p className="inline ml-2">
             By: <span className="inline text-blue-500 text-sm">RASALINA</span>
           </p>
-          <p className="text-sm pl-4 font-bold">
+          <p className="text-sm pl-4 font-bold pt-2 pb-2">
            {props.ibuprofen}{props.exclusive}{props.trump}{props.coronavirus}
           </p>
         </div>
