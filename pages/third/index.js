@@ -81,7 +81,14 @@ export default function thirdpage(props) {
       <div className="container mx-auto">
         <p className="font-bold pb-6">All Post By:Rasallina De Willamson</p>
         <div className="grid md:grid grid-cols-4">
-          <Latestarticle />
+
+           {props.allPost.map((item, idx) => (
+                  <Latestarticle
+                    key={idx}
+                    title = {item.title}
+                    subtitle = {item.subtitle}
+                  />
+                ))}
           
         </div>
       </div>
@@ -99,6 +106,8 @@ export async function getServerSideProps(context) {
     props: {
       rasalina: response.data.rasalina,
       text: response.data.text,
+      allPost: response.data.allPost.box,
+      
 
       // sectionAlone: response.data.sectionAlone,
     }, // will be passed to the page component as props
