@@ -20,7 +20,7 @@ export default function thirdpage(props) {
         <div className="animal"></div>
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto pt-8">
         <div>
           <ul>
             <li className="text-gray-400 text-sm font-bold inline">
