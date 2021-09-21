@@ -225,7 +225,7 @@ export default function Home(props) {
           </div>
 
           <div className="flex justify-center items-center">
-            <div className="moon relative">
+            <div className="moon relative w-full">
               <div className="flex justify-center items-center">
                 <p className="underline bg-white p-4 absolute w-10/12 -bottom-12 font-bold text-sm text-center">
                   Virus confronts leaders with one of modern history's gravest
