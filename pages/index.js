@@ -16,6 +16,7 @@ import ADvertisement from "./details/ADvertisement";
 
 export default function Home(props) {
   return (
+    // page 1
     <div>
       <section>
         <Navbar />
