@@ -186,7 +186,11 @@ export default function Home(props) {
               </div>
 
               <Subscribenwletter />
+              <div className = "pt-6">
+              <div className = "border-2">
            <ADvertisement />
+           </div>
+           </div>
             </section>
           </div>
         </div>
