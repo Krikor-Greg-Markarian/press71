@@ -24,7 +24,7 @@ export default function thirdpage(props) {
         <div>
           <ul>
             <li className="text-gray-400 text-sm font-bold inline">
-              <a href="">HOME</a>
+              <a href="">HOME   </a>
             </li>
             <li className="text-gray-400 text-sm font-bold inline ml-3">
               <a href="">AUTHOR</a>
