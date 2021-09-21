@@ -178,7 +178,7 @@ export default function Home(props) {
               </div>
             </div>
 
-            <section>
+            <section className = "pl-6">
               <Socialconnect />
 
               <div>
