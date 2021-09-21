@@ -5,6 +5,7 @@ import Navbar2 from "../../src/components/Navbar2";
 import Navbar from "../details/Navbar";
 import Allpostby from "./Allpostby";
 import axios from "axios";
+import Latestarticle from "../../src/components/Latestarticle";
 
 export default function thirdpage(props) {
   return (
@@ -47,9 +48,7 @@ export default function thirdpage(props) {
                     <p className="font-bold pl-2">{props.rasalina.name}</p>
                     <p className="text-gray-400 text-sm inline pl-2">
                       {props.rasalina.articles}
-                      <span className="text-gray-400 text-sm inline">
-                        
-                      </span>
+                      <span className="text-gray-400 text-sm inline"></span>
                     </p>
                     <div className="pl-2">
                       <FaFacebook className="text-blue-600 inline " />
@@ -65,14 +64,10 @@ export default function thirdpage(props) {
             <div>
               <div className="flex pt-4 items-center ">
                 <div className="flex-shrink  ">
-                  <p className="text-sm text-gray-400">
-                   {props.text.lorem}
-                  </p>
+                  <p className="text-sm text-gray-400">{props.text.lorem}</p>
                 </div>
                 <div className="flex-shrink ">
-                  
                   <div className="space"></div>
-                  
                 </div>
               </div>
             </div>
@@ -85,58 +80,15 @@ export default function thirdpage(props) {
 
       <div className="container mx-auto">
         <p className="font-bold pb-6">All Post By:Rasallina De Willamson</p>
-
-        <div className="grid grid-cols-4">
-          <div className="col-span-1 ">
-            <Allpostby />
-          </div>
-          <div className="col-span-1">
-            <Allpostby />
-          </div>
-          <div className="col-span-1">
-            <Allpostby />
-          </div>
-          <div className="col-span-1">
-            <Allpostby />
-          </div>
+        <div className="grid md:grid grid-cols-4">
+          <Latestarticle />
+          
         </div>
-        <div className="grid grid-cols-4 pt-6">
-          <div className="col-span-1 ">
-            <Allpostby />
-          </div>
-          <div className="col-span-1">
-            <Allpostby />
-          </div>
-          <div className="col-span-1">
-            <Allpostby />
-          </div>
-          <div className="col-span-1">
-            <Allpostby />
-          </div>
-        </div>
-        <div className="grid grid-cols-4 pt-6">
-          <div className="col-span-1 ">
-            <Allpostby />
-          </div>
-          <div className="col-span-1">
-            <Allpostby />
-          </div>
-          <div className="col-span-1">
-            <Allpostby />
-          </div>
-          <div className="col-span-1">
-            <Allpostby />
-          </div>
-        </div>
-        
       </div>
 
-      <section className = "mt-8">
-      <Footer />
+      <section className="mt-8">
+        <Footer />
       </section>
-      
-
-
     </div>
   );
 }
@@ -147,10 +99,8 @@ export async function getServerSideProps(context) {
     props: {
       rasalina: response.data.rasalina,
       text: response.data.text,
-      
 
       // sectionAlone: response.data.sectionAlone,
     }, // will be passed to the page component as props
   };
 }
-
