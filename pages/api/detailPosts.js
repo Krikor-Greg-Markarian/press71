@@ -20,6 +20,46 @@ export default function handler(req, res) {
         unorderedtitle:          "Moms are like...buttons? Moms are like glue. Moms are like pizza vrusts. Moms are the ones who make sure things happen-from birth to school lunch.",
         unorderedsubtittle:"They're the ones we rely on for playdates and emotional support,homework help and babysitting. Moms are the ultimate dependable support. Like, hopefully, the button on your jeans.",
         unorderedsusubtitle:          "My hero when i was a kid was my mom. Same for everyone i knew. Moms are untouchable. They're elegant,smart,beautiful,kind...everything we want to be. At 29 years old, my favorite compliment i sbeing told that i look like my mom. Seeing myself in her image, like this daughter up top, make me so proud of how far I've come, and so thankful for where i come from.",
+    },
+
+    relatedpost:{
+        imagetext:[
+          {
+            date:"24th March 2019",
+            datetext:"Watch: 10 Days Lter: What italians Wish They Had Known",
+            dateinfo:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, expedita.",
+          },
+         
+        ]
+    },
+
+    writtenby:{
+        bigtitle:"written by",
+        bigsub:"Rosalina D.William",
+        bigtext:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt in dolorem magni quae, rem totam impedit quidem! Ipsam, iure saepe?",
+    },
+
+    comment:{
+        littleBox:[
+          {
+            name:"Rosalina Kelian",
+            seconddate:"24th March 2019",
+            articlelorem:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente.",
+
+          },
+          {
+            name:"Rosalina Kelian",
+            seconddate:"24th March 2019",
+            articlelorem:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente.",
+
+          },
+          {
+            name:"Rosalina Kelian",
+            seconddate:"24th March 2019",
+            articlelorem:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, sapiente.",
+
+          }
+        ]
     }
   };
   res.status(200).json(object);
