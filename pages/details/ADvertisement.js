@@ -7,7 +7,11 @@ function ADvertisement() {
                     <p className="font-bold ">Advertisement</p>
 
                     <div className="flex justify-center items-center pt-4">
-                      <div className="astronoid"></div>
+                      <div className="astronoid relative">
+                        <div className = "flex justify-center items-center">
+                        <p className = "text-white p-1 border-2 border-white absolute top-16 text-sm">ADD BANNER</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
         </div>
