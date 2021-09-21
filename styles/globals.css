@@ -27,6 +27,14 @@ body {
     width: 55%;
     height: 100px;
   }
+  .gift3{
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/28/00/06/gift-1420830__480.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 42%;
+    height: 100px;
+  }
 
 
   .coronaveg{
