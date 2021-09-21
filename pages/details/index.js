@@ -22,6 +22,7 @@ import ADvertisement from "./ADvertisement";
 
 export default function Secondpage(props) {
   return (
+    // page 2
     <div>
       <div className="container mx-auto">
         <Navbar />
