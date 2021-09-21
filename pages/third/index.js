@@ -3,7 +3,6 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Footer from "../../src/components/Footer";
 import Navbar2 from "../../src/components/Navbar2";
 import Navbar from "../details/Navbar";
-import Allpostby from "./Allpostby";
 import axios from "axios";
 import Latestarticle from "../../src/components/Latestarticle";
 
