@@ -19,7 +19,6 @@ import Mustread from "./Mustread";
 import Subscribenwletter from "./Subscribenwletter";
 import ADvertisement from "./ADvertisement";
 
-
 export default function Secondpage(props) {
   return (
     // page 2
@@ -254,29 +253,109 @@ export default function Secondpage(props) {
           </div>
         </div>
 
-        <div className="pl-28 w-10/12">
-          <div>
-            <Socialconnect />
-          </div>
+        <section className="pl-10">
+          <div className="pl-28 w-10/12">
+            <div>
+              <Socialconnect />
+            </div>
 
-          <div className="border-2 p-4">
-            <div className="container mx-auto">
-              <p className="font-bold pt-2 pb-2">Must Read</p>
-              <Mustread />
-              <Mustread />
-              <Mustread />
-              <Mustread />
+            <div className="border-2 p-4">
+              <div className="container mx-auto">
+                <p className="font-bold pt-2 pb-2">Must Read</p>
+                <Mustread />
+                <Mustread />
+                <Mustread />
+                <Mustread />
+              </div>
+            </div>
+
+            <div className="border-2 mt-4">
+              <Subscribenwletter />
+            </div>
+
+            <div className="border-2 mt-4">
+              <ADvertisement />
+            </div>
+
+            <div className="pt-6">
+              <div className="border-2">
+                <div className="p-4">
+                  <p className="font-bold">Popular Tag</p>
+                </div>
+                <div className="p-4">
+                  <div class="flex gap-2">
+                    <div class="flex-grow">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Design
+                      </p>
+                    </div>
+                    <div class="flex-grow ">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Magazine
+                      </p>
+                    </div>
+                    <div class="flex-shrink">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Blog
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-2 pt-2">
+                    <div class="flex-grow">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Ui/Ux
+                      </p>
+                    </div>
+                    <div class="flex-shrink ">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        NNC
+                      </p>
+                    </div>
+                    <div class="flex-grow">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Construction
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-2 pt-2">
+                    <div class="flex-grow">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Design
+                      </p>
+                    </div>
+                    <div class="flex-grow ">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Magazine
+                      </p>
+                    </div>
+                    <div class="flex-shrink">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Blog
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex gap-2 pt-2">
+                    <div class="flex-grow">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Ui/Ux
+                      </p>
+                    </div>
+                    <div class="flex-shrink ">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        NNC
+                      </p>
+                    </div>
+                    <div class="flex-grow">
+                      <p className="text-center border-2 p-1 text-sm text-gray-400">
+                        Construction
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div className="border-2 mt-4">
-            <Subscribenwletter />
-          </div>
-
-          <div className="border-2 mt-4">
-            <ADvertisement />
-          </div>
-        </div>
+        </section>
       </div>
 
       <div>
