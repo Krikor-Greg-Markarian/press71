@@ -5,17 +5,14 @@ import Footer from "../src/components/Footer";
 import Table from "../src/components/Table";
 import Latestarticle from "../src/components/Latestarticle";
 import Fever from "../src/components/Fever";
-import Adviceleft from "../src/components/Adviceleft";
 import Smalladvice from "../src/components/Smalladvice";
 import Virusupdate from "../src/components/Virusupdate";
 import Link from "next/link";
-
 import Socialconnect from "../src/components/Socialconnect";
 import Mustread from "../src/components/Mustread";
 import Subscribenwletter from "../src/components/Subscribenwletter";
-import ADvertisement from "../src/components/ADvertisement";
 import RecentrNews from "../src/components/RecentrNews";
-import AdviceViewAll from "../src/components/AdviceViewAll";
+import ADvertisement from "./details/ADvertisement";
 
 export default function Home(props) {
   return (
@@ -71,20 +68,20 @@ export default function Home(props) {
       </section>
 
       <section className="pb-8">
-        {/* <AdviceViewAll /> */}
+       
         <div className="container mx-auto">
-                  <div className="flex">
-                    <div className="flex-shrink">
-                      <p className="font-bold">Advice</p>
-                    </div>
-                    <div className="flex-grow flex justify-center items-center">
-                      <div className="border-double border-2 w-11/12"></div>
-                    </div>
-                    <div className="flex-shrink">
-                      <p className="font-bold text-sm">VIEW ALL</p>
-                    </div>
-                  </div>
-                </div>
+          <div className="flex">
+            <div className="flex-shrink">
+              <p className="font-bold">Advice</p>
+            </div>
+            <div className="flex-grow flex justify-center items-center">
+              <div className="border-double border-2 w-11/12"></div>
+            </div>
+            <div className="flex-shrink">
+              <p className="font-bold text-sm">VIEW ALL</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="pt-4 pb-4">
@@ -110,9 +107,7 @@ export default function Home(props) {
                     />
                   ))}
                 </div>
-                
 
-               
                 <div className=" pt-8 pb-8 w-screen">
                   <div className="flex justify-start">
                     <div className="gift2 relative">
@@ -136,9 +131,8 @@ export default function Home(props) {
                   </div>
                 </div>
               </div>
-              
 
-              <section className = "pt-8 pb-8">
+              <section className="pt-8 pb-8">
                 <div className="container mx-auto">
                   <div className="flex">
                     <div className="flex-shrink">
@@ -178,32 +172,26 @@ export default function Home(props) {
               </div>
             </div>
 
-            <section className = "pl-6">
+            <section className="pl-6">
               <Socialconnect />
 
               <div>
                 <div className="border-2 p-2">
                   <p className="font-bold">Must Read</p>
                   {props.mustread.map((item, idx) => (
-                    <Mustread
-                      key={idx}
-                      date = {item.date}
-                      title = {item.title}
-                    />
+                    <Mustread key={idx} date={item.date} title={item.title} />
                   ))}
-                 
                 </div>
               </div>
 
               <Subscribenwletter />
-              <ADvertisement />
+           <ADvertisement />
             </section>
           </div>
         </div>
       </section>
 
       <section className="pt-6 pb-6">
-        {/* <AdviceViewAll /> */}
         <div className="container mx-auto">
           <div className="flex">
             <div className="flex-shrink">
@@ -269,11 +257,7 @@ export default function Home(props) {
       </section>
 
       <section className="pt-6 pb-12">
-        {/* <AdviceViewAll 
-      //  title2 = {props.sectionAlone.left}
-      //  viewall = {props.sectionAlone.right}
-       
-       /> */}
+        
         <div className="container mx-auto">
           <div className="flex">
             <div className="flex-shrink">
@@ -320,7 +304,7 @@ export async function getServerSideProps(context) {
       rightsection: response.data.advice.rightsection,
       latestArticles: response.data.latestArticles.box,
       mustread: response.data.mustread.text,
-      // sectionAlone: response.data.sectionAlone,
+      
     }, // will be passed to the page component as props
   };
 }
