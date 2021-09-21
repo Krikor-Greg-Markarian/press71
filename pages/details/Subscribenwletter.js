@@ -4,7 +4,7 @@ function Subscribenwletter() {
     return (
         <div>
              <div className="container mx-auto p-4">
-                    <p>Subscribe News Letter</p>
+                    <p className = "font-bold">Subscribe News Letter</p>
                     <p className="text-gray-400 text-sm pt-2 pb-2">
                       Get every weekly update and insight feed{" "}
                     </p>
