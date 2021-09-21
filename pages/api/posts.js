@@ -40,75 +40,87 @@ export default function handler(req, res) {
         },
         {
           Stories: "ADVICE",
-          adviceCorona:
-            "The Healthiest Way to Sweat Out a Pandemic",
+          adviceCorona: "The Healthiest Way to Sweat Out a Pandemic",
         },
         {
           Stories: "Hospital",
-          adviceCorona:
-            "What to Do About a light Case of COVID-19",
+          adviceCorona: "What to Do About a light Case of COVID-19",
         },
       ],
       rightsection: [
         {
           Stories: "VIRUSUPDATE",
-          adviceCorona:
-            "Colorodo Travel Guide:What to see,Do,Costs,Roads",
+          adviceCorona: "Colorodo Travel Guide:What to see,Do,Costs,Roads",
         },
         {
           Stories: "PANDAMIC",
-          adviceCorona:
-            "Van trip:3 Days in San Sebastian,Spain",
+          adviceCorona: "Van trip:3 Days in San Sebastian,Spain",
         },
         {
           Stories: "MEDICINE",
-          adviceCorona:
-            "Independent Trekking and Camping in Nepal",
+          adviceCorona: "Independent Trekking and Camping in Nepal",
         },
         {
           Stories: "LOCAL NEWS",
-          adviceCorona:
-            "Peru Travel Guide: What to See,Do,Costs,Roads",
+          adviceCorona: "Peru Travel Guide: What to See,Do,Costs,Roads",
         },
       ],
     },
 
-    latestArticles:{
-        box :[
-         {
-           forteen:"14 Coronavirus myths busted by WHO fo better Covid-19 Awareness",
-           asupermarket2:
-        "A supermarket woker was apat at by a customer attempting to stockpile pot Noodles while another was told i hope you get the...",
-         },
-         {
-          forteen:"14 Coronavirus myths busted by WHO fo better Covid-19 Awareness",
+    latestArticles: {
+      box: [
+        {
+          forteen:
+            "14 Coronavirus myths busted by WHO fo better Covid-19 Awareness",
           asupermarket2:
-       "A supermarket woker was apat at by a customer attempting to stockpile pot Noodles while another was told i hope you get the...",
+            "A supermarket woker was apat at by a customer attempting to stockpile pot Noodles while another was told i hope you get the...",
         },
         {
-          forteen:"14 Coronavirus myths busted by WHO fo better Covid-19 Awareness",
+          forteen:
+            "14 Coronavirus myths busted by WHO fo better Covid-19 Awareness",
           asupermarket2:
-       "A supermarket woker was apat at by a customer attempting to stockpile pot Noodles while another was told i hope you get the...",
+            "A supermarket woker was apat at by a customer attempting to stockpile pot Noodles while another was told i hope you get the...",
         },
         {
-          forteen:"14 Coronavirus myths busted by WHO fo better Covid-19 Awareness",
+          forteen:
+            "14 Coronavirus myths busted by WHO fo better Covid-19 Awareness",
           asupermarket2:
-       "A supermarket woker was apat at by a customer attempting to stockpile pot Noodles while another was told i hope you get the...",
+            "A supermarket woker was apat at by a customer attempting to stockpile pot Noodles while another was told i hope you get the...",
         },
-        ],
-      
-        // sectionAlone:{
-        //   left:"Advice",
-        //   right:"View All"
-        // }
-      
+        {
+          forteen:
+            "14 Coronavirus myths busted by WHO fo better Covid-19 Awareness",
+          asupermarket2:
+            "A supermarket woker was apat at by a customer attempting to stockpile pot Noodles while another was told i hope you get the...",
+        },
+      ],
+
+      // sectionAlone:{
+      //   left:"Advice",
+      //   right:"View All"
+      // }
     },
 
-    textSection:{
-        title:"",
-        subtitle:"",
-        smallText:"",
-    }
+    mustread: {
+      text: [
+        {
+          date: "24 DECEMBER 2021",
+          title: "Coronavirus live updates:italy death toll nears 3,000",
+        },
+        {
+          date: "24 DECEMBER 2021",
+          title: "Pacific - travel restrictions for coronavirus",
+        },
+        {
+          date: "24 DECEMBER 2021",
+          title: "What to Do About a Light Case of COVID-19",
+        },
+        {
+          date: "24 DECEMBER 2021",
+          title: "The Dos and Donts of the 'Social Distancing' Bhavior",
+        },
+      ],
+    },
   };
   res.status(200).json(object);
 }
