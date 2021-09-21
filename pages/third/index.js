@@ -4,8 +4,9 @@ import Footer from "../../src/components/Footer";
 import Navbar2 from "../../src/components/Navbar2";
 import Navbar from "../details/Navbar";
 import Allpostby from "./Allpostby";
+import axios from "axios";
 
-function thirdpage() {
+export default function thirdpage(props) {
   return (
     <div>
       <div>
@@ -142,4 +143,15 @@ function thirdpage() {
   );
 }
 
-export default thirdpage;
+export async function getServerSideProps(context) {
+  const response = await axios.get("http://localhost:3000/api/detailPosts");
+  return {
+    props: {
+      rasalina: response.data.rasalina,
+      
+
+      // sectionAlone: response.data.sectionAlone,
+    }, // will be passed to the page component as props
+  };
+}
+
