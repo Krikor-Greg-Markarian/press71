@@ -184,10 +184,14 @@ export default function Home(props) {
               <div>
                 <div className="border-2 p-2">
                   <p className="font-bold">Must Read</p>
-                  <Mustread />
-                  <Mustread />
-                  <Mustread />
-                  <Mustread />
+                  {props.mustread.map((item, idx) => (
+                    <Mustread
+                      key={idx}
+                      date = {item.date}
+                      title = {item.title}
+                    />
+                  ))}
+                 
                 </div>
               </div>
 
@@ -315,6 +319,7 @@ export async function getServerSideProps(context) {
       leftsection: response.data.advice.leftsection,
       rightsection: response.data.advice.rightsection,
       latestArticles: response.data.latestArticles.box,
+      mustread: response.data.mustread.text,
       // sectionAlone: response.data.sectionAlone,
     }, // will be passed to the page component as props
   };
