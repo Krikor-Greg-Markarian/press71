@@ -15,6 +15,9 @@ import Footer from "../../src/components/Footer";
 import Socialconnect from "./Socialconnect";
 import Link from "next/link";
 import Navbar from "./Navbar";
+import Mustread from "./Mustread";
+import Subscribenwletter from "./Subscribenwletter";
+import ADvertisement from "./ADvertisement";
 
 export default function Secondpage(props) {
   return (
@@ -99,7 +102,7 @@ export default function Secondpage(props) {
           <section className="pb-2">
             <div className=" pt-3 pb-8 w-screen">
               <div className="flex justify-start">
-                <div className="gift2 relative">
+                <div className="gift3 relative">
                   <div className="container mx-auto">
                     <div className="absolute transform translate-y-8 translate-x-6">
                       <p className="text-white font-bold ">
@@ -215,7 +218,9 @@ export default function Secondpage(props) {
                     <div className="small3 mt-4"></div>
                   </div>
                   <div className="flex-shrink">
-                    <p className="text-sm text-gray-400 pt-2">{props.writtenby.bigtitle}</p>
+                    <p className="text-sm text-gray-400 pt-2 ">
+                      {props.writtenby.bigtitle}
+                    </p>
                     <p className="text-2xl font-bold pt-1">
                       {props.writtenby.bigsub}
                     </p>
@@ -231,14 +236,13 @@ export default function Secondpage(props) {
               <div className="container mx-auto">
                 <p className="font-bold text-2xl">03 Comments</p>
                 {props.comment.map((item, idx) => (
-                    <Comments 
-                      key={idx}
-                      name = {item.name}
-                      seconddate ={item.seconddate}
-                      articlelorem = {item.articlelorem}
-                    />
-                  ))}
-                
+                  <Comments
+                    key={idx}
+                    name={item.name}
+                    seconddate={item.seconddate}
+                    articlelorem={item.articlelorem}
+                  />
+                ))}
               </div>
             </div>
             <div>
@@ -248,8 +252,28 @@ export default function Secondpage(props) {
           </div>
         </div>
 
-        <div className="pl-24 w-10/12">
-          <Socialconnect />
+        <div className="pl-28 w-10/12">
+          <div>
+            <Socialconnect />
+          </div>
+
+          <div className="border-2 p-4">
+            <div className="container mx-auto">
+              <p className="font-bold pt-2 pb-2">Must Read</p>
+              <Mustread />
+              <Mustread />
+              <Mustread />
+              <Mustread />
+            </div>
+          </div>
+
+          <div className="border-2 mt-4">
+            <Subscribenwletter />
+          </div>
+
+          <div className="border-2 mt-4">
+            <ADvertisement />
+          </div>
         </div>
       </div>
 
