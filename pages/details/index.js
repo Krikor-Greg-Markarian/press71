@@ -125,13 +125,13 @@ export default function Secondpage(props) {
             wrapped up in making sure everybody
           </p>
           <p className="text-sm text-gray-400 pt-2 pb-2">
-           {props.wrapped.article}
+            {props.wrapped.article}
           </p>
           <p className="text-sm text-gray-400 pt-2 pb-2">
             {props.wrapped.subarticle}
           </p>
           <p className="text-sm text-gray-400 pt-2 pb-2">
-           {props.wrapped.subsubarticle}
+            {props.wrapped.subsubarticle}
           </p>
           <p className="font-bold pt-4 pb-2 text-lg">Unordered list style ?</p>
           <p className="text-sm text-gray-400 pt-2 pb-2">
@@ -141,7 +141,7 @@ export default function Secondpage(props) {
             {props.unordered.unorderedsubtittle}
           </p>
           <p className="text-sm text-gray-400 pt-2">
-           {props.unordered.unorderedsusubtitle}
+            {props.unordered.unorderedsusubtitle}
           </p>
 
           <div className="container mx-auto pt-6 pb-6">
@@ -186,10 +186,24 @@ export default function Secondpage(props) {
               <p className="font-bold">Related Post</p>
               <div className="md:grid grid-cols-2">
                 <div className="col-span-1 pt-6 pb-6">
-                  <ImgText />
+                  {props.relatedpost.map((item, idx) => (
+                    <ImgText
+                      key={idx}
+                      date={item.date}
+                      datetext={item.datetext}
+                      dateinfo={item.dateinfo}
+                    />
+                  ))}
                 </div>
                 <div className="col-span-1 pt-6 pb-6">
-                  <ImgText />
+                  {props.relatedpost.map((item, idx) => (
+                    <ImgText
+                      key={idx}
+                      date={item.date}
+                      datetext={item.datetext}
+                      dateinfo={item.dateinfo}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
@@ -201,14 +215,12 @@ export default function Secondpage(props) {
                     <div className="small3 mt-4"></div>
                   </div>
                   <div className="flex-shrink">
-                    <p className="text-sm text-gray-400 pt-2">written by</p>
+                    <p className="text-sm text-gray-400 pt-2">{props.writtenby.bigtitle}</p>
                     <p className="text-2xl font-bold pt-1">
-                      Rosalina D.William
+                      {props.writtenby.bigsub}
                     </p>
                     <p className="text-sm text-gray-400 pt-1">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Deserunt in dolorem magni quae, rem totam impedit quidem!
-                      Ipsam, iure saepe?
+                      {props.writtenby.bigtext}
                     </p>
                   </div>
                 </div>
@@ -218,9 +230,15 @@ export default function Secondpage(props) {
             <div>
               <div className="container mx-auto">
                 <p className="font-bold text-2xl">03 Comments</p>
-                <Comments />
-                <Comments />
-                <Comments />
+                {props.comment.map((item, idx) => (
+                    <Comments 
+                      key={idx}
+                      name = {item.name}
+                      seconddate ={item.seconddate}
+                      articlelorem = {item.articlelorem}
+                    />
+                  ))}
+                
               </div>
             </div>
             <div>
@@ -250,6 +268,9 @@ export async function getServerSideProps(context) {
       hereCome: response.data.hereCome,
       wrapped: response.data.wrapped,
       unordered: response.data.unordered,
+      relatedpost: response.data.relatedpost.imagetext,
+      writtenby: response.data.writtenby,
+      comment: response.data.comment.littleBox,
 
       // sectionAlone: response.data.sectionAlone,
     }, // will be passed to the page component as props
