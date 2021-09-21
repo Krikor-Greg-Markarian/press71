@@ -15,6 +15,7 @@ import Mustread from "../src/components/Mustread";
 import Subscribenwletter from "../src/components/Subscribenwletter";
 import ADvertisement from "../src/components/ADvertisement";
 import RecentrNews from "../src/components/RecentrNews";
+import AdviceViewAll from "../src/components/AdviceViewAll";
 
 export default function Home(props) {
   return (
@@ -69,26 +70,21 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className="pt-4 pb-4">
-        
-
-
-
-        <div className = "container mx-auto">
-        <div className="flex">
-  <div className="flex-shrink">
-        <p className = "font-bold">Advice</p>
-  </div>
-  <div className="flex-grow flex justify-center items-center">
-    <div className = "border-double border-2 w-11/12"></div>
-  </div>
-  <div className="flex-shrink">
-    <p className = "font-bold text-sm">view All</p>
-  </div>
-</div>
-        </div>
-
-
+      <section className="pb-8">
+        {/* <AdviceViewAll /> */}
+        <div className="container mx-auto">
+                  <div className="flex">
+                    <div className="flex-shrink">
+                      <p className="font-bold">Advice</p>
+                    </div>
+                    <div className="flex-grow flex justify-center items-center">
+                      <div className="border-double border-2 w-11/12"></div>
+                    </div>
+                    <div className="flex-shrink">
+                      <p className="font-bold text-sm">VIEW ALL</p>
+                    </div>
+                  </div>
+                </div>
       </section>
 
       <section className="pt-4 pb-4">
@@ -114,7 +110,9 @@ export default function Home(props) {
                     />
                   ))}
                 </div>
+                
 
+               
                 <div className=" pt-8 pb-8 w-screen">
                   <div className="flex justify-start">
                     <div className="gift2 relative">
@@ -137,7 +135,25 @@ export default function Home(props) {
                     </div>
                   </div>
                 </div>
-              </div>{" "}
+              </div>
+              
+
+              <section className = "pt-8 pb-8">
+                <div className="container mx-auto">
+                  <div className="flex">
+                    <div className="flex-shrink">
+                      <p className="font-bold">Local News</p>
+                    </div>
+                    <div className="flex-grow flex justify-center items-center">
+                      <div className="border-double border-2 w-11/12"></div>
+                    </div>
+                    <div className="flex-shrink">
+                      <p className="font-bold text-sm">VIEW ALL</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
               <div className="md:grid grid-cols-2 ">
                 <div className="col-span-1 pt-6">
                   {props.posts_data.map((item, idx) => (
@@ -182,12 +198,19 @@ export default function Home(props) {
         </div>
       </section>
 
-      <section className="pt-4 pb-4">
+      <section className="pt-6 pb-6">
+        {/* <AdviceViewAll /> */}
         <div className="container mx-auto">
-          <div className="font-bold ">
-            Advice
-            <div className="float-right font-normal">VIEW ALL</div>
-            <div className="container mx-auto  w-10/12 border-double border-"></div>{" "}
+          <div className="flex">
+            <div className="flex-shrink">
+              <p className="font-bold">Advice</p>
+            </div>
+            <div className="flex-grow flex justify-center items-center">
+              <div className="border-double border-2 w-11/12"></div>
+            </div>
+            <div className="flex-shrink">
+              <p className="font-bold text-sm">VIEW ALL</p>
+            </div>
           </div>
         </div>
       </section>
@@ -241,11 +264,23 @@ export default function Home(props) {
         <Table />
       </section>
 
-      <section className="pt-4 pb-4">
+      <section className="pt-6 pb-12">
+        {/* <AdviceViewAll 
+      //  title2 = {props.sectionAlone.left}
+      //  viewall = {props.sectionAlone.right}
+       
+       /> */}
         <div className="container mx-auto">
-          <div className="font-bold">
-            Latest Articles
-            <div className="float-right font-normal">VIEW ALL</div>
+          <div className="flex">
+            <div className="flex-shrink">
+              <p className="font-bold">Latest Articles</p>
+            </div>
+            <div className="flex-grow flex justify-center items-center">
+              <div className="border-double border-2 w-11/12"></div>
+            </div>
+            <div className="flex-shrink">
+              <p className="font-bold text-sm">VIEW ALL</p>
+            </div>
           </div>
         </div>
       </section>
@@ -253,14 +288,13 @@ export default function Home(props) {
       <section>
         <div className="container mx-auto ">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {props.latestArticles.map((item, idx) => (
+            {props.latestArticles.map((item, idx) => (
               <Latestarticle
                 key={idx}
-                forteen = {item.forteen}
-                asupermarket2 = {item.asupermarket2}
+                forteen={item.forteen}
+                asupermarket2={item.asupermarket2}
               />
             ))}
-            
           </div>
         </div>
       </section>
@@ -281,6 +315,7 @@ export async function getServerSideProps(context) {
       leftsection: response.data.advice.leftsection,
       rightsection: response.data.advice.rightsection,
       latestArticles: response.data.latestArticles.box,
+      // sectionAlone: response.data.sectionAlone,
     }, // will be passed to the page component as props
   };
 }
