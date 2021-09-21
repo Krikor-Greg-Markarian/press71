@@ -8,6 +8,7 @@ import Latestarticle from "../../src/components/Latestarticle";
 
 export default function thirdpage(props) {
   return (
+    // page 3
     <div>
       <div>
         <Navbar />
