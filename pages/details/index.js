@@ -46,7 +46,7 @@ export default function Secondpage(props) {
             <li className="text-sm text-gray-500 font-bold ml-2 inline">
               <a href="#">TIPS :</a>
             </li>
-            <p className="text-red-400 underline inline ml-5">
+            <p className="text-red-600 underline inline ml-5">
               Global research and innovation forum: toward a reasearch rodmap
             </p>
           </ul>
